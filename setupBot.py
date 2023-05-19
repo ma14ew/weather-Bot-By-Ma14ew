@@ -3,8 +3,8 @@ import requests
 import json
 import emoji
 
-API = '0c2ddd9b3a1b5aa921482b63338efba0'
-API_BOT = '5990480154:AAHoOz-cJ7l55_dABvscVWEuEd_lMNt64SA'
+API = '0c2ddd9b3a1b5aa921482b63338efba0' #Токен от https://openweathermap.org
+API_BOT = '5990480154:AAHoOz-cJ7l55_dABvscVWEuEd_lMNt64SA' #Токен от TelegramBot
 
 bot = telebot.TeleBot(API_BOT)
 
@@ -45,7 +45,6 @@ def get_weather(message):
         else:
             emoji_desc = emoji.emojize(':yin_yang:')
 
-        print(data)
         bot.reply_to(message, f'Погода в городе {city}: {data["main"]["temp"]} °C{emoji_tempf}, ощущается как {data["main"]["feels_like"]} °C{emoji_temp}, {data["weather"][0]["description"]}{emoji_desc}')
     else:
         bot.reply_to(message, 'Ошибка, попробуйте ввести правильное название города')
