@@ -3,8 +3,10 @@ import requests
 import json
 import emoji
 
-bot = telebot.TeleBot('5990480154:AAHoOz-cJ7l55_dABvscVWEuEd_lMNt64SA')
 API = '0c2ddd9b3a1b5aa921482b63338efba0'
+API_BOT = '5990480154:AAHoOz-cJ7l55_dABvscVWEuEd_lMNt64SA'
+
+bot = telebot.TeleBot(API_BOT)
 
 @bot.message_handler(commands=['start'])
 def start(message):
