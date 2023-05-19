@@ -26,5 +26,6 @@
 Вы можете добавлять новые функции и команды в бота, изменяя файл setupBot.py.
 
 Скриншот работы: 
-<img width="1139" alt="image" src="https://github.com/ma14ew/weather-Bot-By-Ma14ew/assets/55161938/33910f2d-c5b9-4694-9cb3-7a3d59798c1b">
+<img width="1140" alt="image" src="https://github.com/ma14ew/weather-Bot-By-Ma14ew/assets/55161938/138fcdc1-7db8-4e52-b888-4c8930f0339a">
+
 
